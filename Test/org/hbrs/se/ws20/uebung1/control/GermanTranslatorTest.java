@@ -19,8 +19,10 @@ class GermanTranslatorTest {
     @Test
     void translateNumber() {
         assertEquals(translator.translateNumber(-5),"Uebersetzung der Zahl " + -5 + " nicht möglich " + Translator.version);
-        assertEquals(translator.translateNumber(15), "Uebersetzung der Zahl " + 15 + " nicht möglich " + Translator.version);
-        assertEquals(translator.translateNumber(5),"fünf");
+        assertEquals(translator.translateNumber(-1),"Uebersetzung der Zahl " + -1 + " nicht möglich " + Translator.version);
+        assertEquals(translator.translateNumber(0),"Uebersetzung der Zahl " + 0 + " nicht möglich " + Translator.version);
+        assertEquals(translator.translateNumber(1),"eins");
         assertEquals(translator.translateNumber(10),"zehn");
+        assertEquals(translator.translateNumber(15), "Uebersetzung der Zahl " + 15 + " nicht möglich " + Translator.version);
     }
 }
