@@ -1,5 +1,7 @@
 package org.hbrs.se.ws20.uebung1.control;
 
+import java.util.Map;
+
 public class GermanTranslator implements Translator {
 
 	public String date = "Okt/2020"; // Default-Wert
@@ -7,11 +9,11 @@ public class GermanTranslator implements Translator {
 	/**
 	 * Methode zur Übersetzung einer Zahl in eine String-Repraesentation
 	 */
-	public String translateNumber( int number ) { 
-		// [ihr Source Code aus Übung 1-2] 
-		return null;
+	public String translateNumber( int number ) {
+		Map<Integer,String> map = Map.of(1,"eins",2,"zwei",3,"drei",4,"vier",5,"fünf",6,"sechs",7,"sieben",8,"acht",9,"neun",10,"zehn");
+		return map.getOrDefault(number,"Uebersetzung der Zahl " + number + " nicht möglich " + Translator.version);
 	}
-		
+
 	/**
 	 * Objektmethode der Klasse GermanTranslator zur Ausgabe einer Info.
 	 */
