@@ -1,14 +1,9 @@
 package org.hbrs.se.ws20.uebung1.control;
 import org.hbrs.se.ws20.uebung1.view.Client;
 import java.io.*;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
-
-
 public class Blackboxtest{
-
-
     public static void main(String[] args) throws FileNotFoundException {
         Client c = new Client();
         List<Integer> testZahl = List.of(5,-5,0);
