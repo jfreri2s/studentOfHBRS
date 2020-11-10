@@ -10,7 +10,7 @@ public class GermanTranslator implements Translator {
 	 */
 	public String translateNumber( int number ) {
 		Map<Integer,String> map = Map.of(1,"eins",2,"zwei",3,"drei",4,"vier",5,"fünf",6,"sechs",7,"sieben",8,"acht",9,"neun",10,"zehn");
-		return map.getOrDefault(number,"Uebersetzung der Zahl " + number + " nicht möglich " + Translator.version);
+		return map.getOrDefault(number,"Uebersetzung der Zahl " + number + " nicht möglich " + "(" + Translator.version + ")");
 	}
 
 	/**
