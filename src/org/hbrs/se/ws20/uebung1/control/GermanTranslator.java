@@ -1,6 +1,5 @@
 package org.hbrs.se.ws20.uebung1.control;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class GermanTranslator implements Translator {
