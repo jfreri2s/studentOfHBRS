@@ -12,8 +12,8 @@ public class Blackboxtest{
         Client c = new Client();
         List<Integer> testZahl = List.of(5,-5,0);
         List<String> testString = List.of("Das Ergebnis der Berechnung: fünf",
-                "Das Ergebnis der Berechnung: Uebersetzung der Zahl " + -5 + " nicht möglich " + Translator.version,
-                "Das Ergebnis der Berechnung: Uebersetzung der Zahl " + 0 + " nicht möglich " + Translator.version );
+                "Das Ergebnis der Berechnung: Uebersetzung der Zahl " + -5 + " nicht möglich " + "(" +Translator.version + ")",
+                "Das Ergebnis der Berechnung: Uebersetzung der Zahl " + 0 + " nicht möglich " + "(" + Translator.version + ")");
 
         for(int i = 0; i <= 2; i++){
             PrintStream a = new PrintStream("test.txt");
