@@ -3,7 +3,6 @@ package org.hbrs.se.ws20.uebung1.control;
 import java.util.Map;
 
 public class GermanTranslator implements Translator {
-
 	public String date = "Okt/2020"; // Default-Wert
 
 	/**
