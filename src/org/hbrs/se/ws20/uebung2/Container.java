@@ -17,18 +17,16 @@ public class Container {
         list.add(member);
     }
     public String deleteMember(Integer id){
-        String erg;
-        for (int i = 0; i < list.size(); i++) {
-            if (list.listIterator().next().getID().equals(id)) {
-                erg = "" + list.get(i).toString();
-                list.remove(i);
+        for (Member a : list) {
+            if (a.getID().equals(id)) {
+                String erg = "" + a.toString();
+                list.remove(a);
                 return erg;
             }
         }
-
         return "Die Zahl mit der ID " + id + " ist nicht vorhanden"; // Bei Exception kann man Stacktrace nachvollziehen. Das ist bei einem String nicht möglich
     }
-    public  void dump(){
+    public void dump(){
         for (Member a: list) {
             System.out.println(a.toString());
         }
