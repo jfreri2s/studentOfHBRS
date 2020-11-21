@@ -1,7 +1,7 @@
-package org.hbrs.se.ws20.uebung1.solutions.view;
+package org.hbrs.se.ws20.solutions.uebung1.view;
 
-import org.hbrs.se.ws20.uebung1.solutions.control.Translator;
-import org.hbrs.se.ws20.uebung1.solutions.control.factory.TranslatorFactory;
+import org.hbrs.se.ws20.solutions.uebung1.control.Translator;
+import org.hbrs.se.ws20.solutions.uebung1.control.factory.TranslatorFactory;
 
 public class Client {
 

@@ -1,8 +1,8 @@
-package org.hbrs.se.ws20.uebung1.solutions.control.factory;
+package org.hbrs.se.ws20.solutions.uebung1.control.factory;
 
-import org.hbrs.se.ws20.uebung1.solutions.control.EnglishTranslator;
-import org.hbrs.se.ws20.uebung1.solutions.control.GermanTranslator;
-import org.hbrs.se.ws20.uebung1.solutions.control.Translator;
+import org.hbrs.se.ws20.solutions.uebung1.control.GermanTranslator;
+import org.hbrs.se.ws20.solutions.uebung1.control.EnglishTranslator;
+import org.hbrs.se.ws20.solutions.uebung1.control.Translator;
 
 /**
  * Factory-Klasse zur konsistenten und zentralen Erstellung von Translator-Objekten

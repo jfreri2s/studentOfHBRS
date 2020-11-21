@@ -1,4 +1,4 @@
-package org.hbrs.se.ws20.uebung1.solutions.control;
+package org.hbrs.se.ws20.solutions.uebung1.control;
 
 /**
  * Interface fuer Translator-Objekte, muss auf jeden Fall auf public gesetzt werden, sonst nicht sichtbar

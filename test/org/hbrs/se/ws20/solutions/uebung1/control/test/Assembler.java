@@ -1,15 +1,30 @@
-package org.hbrs.se.ws20.uebung1.solutions.control.test;
+package org.hbrs.se.ws20.solutions.uebung1.control.test;
 
-import org.hbrs.se.ws20.uebung1.solutions.view.Client;
-import org.hbrs.se.ws20.uebung1.solutions.view.*;
-import org.hbrs.se.ws20.uebung1.solutions.control.*;
+import org.hbrs.se.ws20.solutions.uebung1.control.EnglishTranslator;
+import org.hbrs.se.ws20.solutions.uebung1.control.GermanTranslator;
+import org.hbrs.se.ws20.solutions.uebung1.control.Translator;
+import org.hbrs.se.ws20.solutions.uebung1.view.Client;
+import org.hbrs.se.ws20.solutions.uebung1.view.ClientAlt;
 
-public class BlackBoxTest {
-	
+public class Assembler {
+
 	private Client client = null;
 
-	public BlackBoxTest() {
-		client = new Client();
+	/**
+	 * Anwendung Dependency Injection (DI) --> SE-2
+	 * Anwendung u.a. Spring (komplex), Mockito (SE-2)
+	 */
+	public Assembler() {
+		Translator german = new GermanTranslator();
+		ClientAlt clientAlt = new ClientAlt( german );
+
+		clientAlt.display(1);
+		// Deutsch
+
+		clientAlt.setTranslator(new EnglishTranslator());
+		clientAlt.display(2);
+		// Englisch
+
 	}
 	
 	/*
@@ -52,7 +67,7 @@ public class BlackBoxTest {
 
 	
 	public static void main(String[] args) {
-		BlackBoxTest ass = new BlackBoxTest();
+		Assembler ass = new Assembler();
 		ass.test();
 	}
 

@@ -1,8 +1,8 @@
-package org.hbrs.se.ws20.uebung1.solutions.control.test;
+package org.hbrs.se.ws20.solutions.uebung1.control.test;
 
-import org.hbrs.se.ws20.uebung1.solutions.control.factory.TranslatorFactory;
-import org.hbrs.se.ws20.uebung1.solutions.control.GermanTranslator;
-import org.hbrs.se.ws20.uebung1.solutions.control.Translator;
+import org.hbrs.se.ws20.solutions.uebung1.control.factory.TranslatorFactory;
+import org.hbrs.se.ws20.solutions.uebung1.control.GermanTranslator;
+import org.hbrs.se.ws20.solutions.uebung1.control.Translator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

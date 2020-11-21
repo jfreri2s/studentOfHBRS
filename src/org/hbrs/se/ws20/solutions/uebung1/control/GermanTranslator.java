@@ -1,4 +1,4 @@
-package org.hbrs.se.ws20.uebung1.solutions.control;
+package org.hbrs.se.ws20.solutions.uebung1.control;
 
 public class GermanTranslator implements Translator {
 
